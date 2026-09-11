@@ -17,12 +17,10 @@
   --teal: #0EA99D;
   --teal-deep: #0A7A70;
   --rose: #CC3B1B;
-  --rose-soft: #FFE0D3;
   --hair: #E1E8F0;
   --paper: #FFFFFF;
   --navy-deep: #0A1B36;
   --navy-mid: #0C3B52;
-  --teal-bright: #4FEEDD;
   --max-w: 920px;
 }
 
@@ -125,21 +123,10 @@ nav.links a[aria-current="page"]{color:var(--ink); font-weight:600; border-botto
   text-decoration:none; border:1px solid transparent; transition:background .15s ease, color .15s ease, border-color .15s ease;
 }
 .btn-primary{background:var(--rose); color:#fff;}
-.btn-primary:hover{background:#FF8468; color:#fff;}
+.btn-primary:hover{background:#A8300F; color:#fff;}
 .btn-secondary{background:transparent; color:#F2F7F6; border-color:rgba(255,255,255,0.45);}
 .btn-secondary:hover{border-color:#FFFFFF; color:#FFFFFF;}
 .hero-art{width:100%; height:auto;}
-
-/* ---------- Section nav cards (home page) ---------- */
-.section-nav-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; margin-top:34px;}
-.section-nav-card{
-  display:block; text-decoration:none; background:var(--paper); border:1px solid var(--hair);
-  border-radius:6px; padding:24px; transition:border-color .15s ease, transform .15s ease;
-}
-.section-nav-card:hover{border-color:var(--teal); transform:translateY(-2px);}
-.section-nav-card .tag{font-size:0.78rem; color:var(--teal-deep); text-transform:uppercase; letter-spacing:0.04em;}
-.section-nav-card h3{font-size:1.15rem; margin:8px 0 8px; color:var(--ink);}
-.section-nav-card p{font-size:0.92rem; color:var(--ink-soft); margin:0;}
 
 /* ---------- Sections ---------- */
 section{padding:56px 0;}
@@ -226,7 +213,7 @@ section.alt{background:var(--bg-panel);}
 .timeline{list-style:none; margin:0; padding:0;}
 .timeline li{padding:14px 0; border-bottom:1px solid var(--hair); display:flex; gap:16px; justify-content:space-between;}
 .timeline li:last-child{border-bottom:none;}
-.timeline .yr{color:var(--ink-soft); font-size:0.9rem; white-space:nowrap; padding-top:2px;}
+.timeline .yr{color:var(--ink-soft); font-size:0.9rem; font-family:'Fraunces',serif; white-space:nowrap; padding-top:2px;}
 .timeline .what strong{display:block; font-size:0.98rem;}
 .timeline .what span{color:var(--ink-soft); font-size:0.92rem;}
 .honors-list{list-style:none; margin:0; padding:0;}
@@ -257,7 +244,7 @@ footer{padding:56px 0 40px; background:var(--bg-panel); border-top:1px solid var
 .contact-list li{padding:8px 0; font-size:0.98rem;}
 .contact-list a{text-decoration:none;}
 address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:18px; line-height:1.6;}
-.contact-note{margin-top:52px;}
+.contact-note{margin-top:36px;}
 .foot-bottom{
   margin-top:44px; padding-top:20px; border-top:1px solid var(--hair);
   color:var(--ink-soft); font-size:0.86rem; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
@@ -278,7 +265,6 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
   .hero{grid-template-columns:1fr; gap:36px; padding-top:44px;}
   .hero h1{white-space:normal; font-size:clamp(1.5rem, 6vw, 2rem);}
   .hero-art{max-width:280px; margin:0 auto;}
-  .section-nav-grid{grid-template-columns:1fr;}
   .skill-groups{grid-template-columns:1fr;}
   .two-col{grid-template-columns:1fr;}
   .contact-grid{grid-template-columns:1fr;}
@@ -365,7 +351,7 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
     <div class="section-head">
       <h2>About me</h2>
     </div>
-    <p class="lede">I am a biophysicist with over twelve years of experience studying how proteins and small molecules organize themselves inside living cells. I earned my PhD in Biological Sciences from the National Centre for Biological Sciences (TIFR, Bengaluru), then trained as an HHMI postdoctoral fellow at UT Southwestern Medical Center, where I now serve as an Instructor in the Department of Biophysics. My work has been published in journals including Nature Chemistry. What draws me to this field is a simple question: what rules decide which molecules end up where inside a cell, and what happens when those rules break down in disease. I bring that same curiosity to applied, translational problems beyond the bench, including AI-driven diagnostics and therapeutics.</p>
+    <p class="lede">I am a biophysicist with over twelve years of experience studying how proteins and small molecules organize themselves inside living cells. I earned my PhD in Biological Sciences from the National Centre for Biological Sciences (Tata Institute of Fundamental Research), then completed my postdoctoral training in the Department of Biophysics/HHMI at UT Southwestern Medical Center, where I now serve as an Instructor. What drives my research is a simple question: what rules decide which molecules end up where inside a cell, and what happens when those rules break down in disease. I bring that same curiosity to applied, translational problems beyond the bench, including AI-driven diagnostics and therapeutics.</p>
   </div>
 </section>
 
@@ -528,7 +514,7 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
             <g fill="none" stroke="#0EA99D" stroke-width="1.6" stroke-linecap="round" opacity="0.75">
               <path d="M177.2,287.9 C183.7,286.7 180.5,255.7 187.1,254.2"/> <path d="M214.4,102.5 C193.3,103.2 201.5,109.3 180.1,110.1"/> <path d="M211.7,124.4 C194.8,124.4 205.3,129.0 188.2,129.1"/> <path d="M126.9,167.7 C142.2,165.6 139.2,153.7 154.8,151.5"/> <path d="M198.8,131.1 C189.1,130.4 192.4,117.1 182.5,116.3"/> <path d="M208.1,149.5 C212.7,149.9 211.0,183.5 215.7,184.3"/> <path d="M166.9,271.2 C172.7,272.5 170.8,303.3 176.7,304.9"/> <path d="M219.9,327.4 C215.0,328.9 217.0,350.2 212.1,352.0"/> <path d="M137.4,251.8 C155.6,251.6 149.7,252.6 168.2,252.5"/> <path d="M187.4,109.8 C204.4,110.1 190.2,106.4 207.5,106.6"/> <path d="M124.4,291.5 C142.2,289.8 137.9,278.4 156.1,276.5"/> <path d="M144.0,231.4 C147.1,234.6 144.3,207.0 147.5,210.0"/> <path d="M198.9,318.5 C216.5,319.5 215.1,325.5 233.1,326.5"/> <path d="M142.3,253.8 C159.8,255.1 146.7,240.2 164.4,241.3"/> <path d="M167.6,176.2 C161.7,177.3 164.3,195.8 158.3,197.1"/> <path d="M118.5,274.2 C132.2,274.0 127.1,273.9 141.0,273.7"/>
             </g>
-            <g fill="none" stroke="#7C5BA6" stroke-width="1.6" stroke-linecap="round" opacity="0.7">
+            <g fill="none" stroke="#6B4FA0" stroke-width="1.6" stroke-linecap="round" opacity="0.7">
               <path d="M358.4,233.7 C343.7,233.0 353.4,247.6 338.6,247.0"/> <path d="M338.5,213.5 C322.1,211.6 336.6,225.1 320.0,223.3"/> <path d="M240.1,223.3 C249.6,225.8 242.0,202.3 251.7,204.6"/> <path d="M353.8,258.9 C357.7,260.2 354.9,236.7 358.9,237.8"/> <path d="M254.5,314.6 C248.3,311.8 253.2,343.3 246.9,340.8"/> <path d="M292.2,221.9 C290.3,220.6 290.7,196.1 288.7,194.5"/> <path d="M286.1,133.1 C269.0,133.4 277.8,157.6 260.4,158.1"/> <path d="M313.7,224.8 C305.8,224.5 310.5,243.2 302.4,243.0"/> <path d="M280.8,299.4 C284.2,299.0 282.2,269.3 285.7,268.6"/> <path d="M330.2,189.5 C325.6,190.4 327.9,165.4 323.3,166.0"/> <path d="M331.4,274.6 C325.3,276.3 328.1,306.4 321.9,308.4"/> <path d="M303.8,160.2 C294.7,162.0 300.1,134.5 290.9,136.0"/> <path d="M316.3,302.4 C304.2,302.2 311.0,327.1 298.8,327.1"/> <path d="M300.2,232.6 C311.3,231.9 305.8,261.9 317.0,261.5"/> <path d="M295.2,274.8 C292.1,271.4 292.3,247.3 289.2,243.7"/> <path d="M332.8,246.0 C323.6,247.0 328.5,222.3 319.2,223.0"/>
             </g>
 
@@ -552,7 +538,7 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
         <span><i style="background:none; border:2px dashed #CC3B1B; border-radius:50%;"></i>Selected condensate (stress granule)</span>
         <span><i style="background:#0EA99D; opacity:0.35; border:1.5px dashed #0EA99D;"></i>Condensate boundary</span>
         <span><i style="background:none; border-top:2px solid #0EA99D; border-radius:0; width:14px; height:0;"></i>Protein scaffold (e.g. G3BP1)</span>
-        <span><i style="background:none; border-top:2px solid #7C5BA6; border-radius:0; width:14px; height:0;"></i>RNA</span>
+        <span><i style="background:none; border-top:2px solid #6B4FA0; border-radius:0; width:14px; height:0;"></i>RNA</span>
         <span><i style="background:#E8563A;"></i>Enriched small molecule</span>
         <span><i style="background:#7C8798;"></i>Excluded small molecule</span>
       </div>
@@ -620,7 +606,7 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
       <details>
         <summary><span class="chevron"></span>Read full project</summary>
         <div class="project-full">
-          <p>Our lab is exploring a question at the intersection of cell biology and drug safety: does a small molecule's tendency to partition into biomolecular condensates — the membrane-less, phase-separated compartments increasingly recognized as central hubs of cellular organization — carry information about its potential to cause organ toxicity? Using mass spectrometry-based partitioning measurements across eight reconstituted condensate systems and a validated machine learning pipeline, we've shown that this partitioning behavior is predictable from chemical structure, and that specific chemical signatures — aromaticity linked to hepatotoxicity, flexible basic-nitrogen-containing scaffolds linked to cardiotoxicity — recur consistently across thousands of approved, withdrawn, and investigational compounds drawn from independent pharmaceutical libraries.</p>
+          <p>Our lab is exploring a question at the intersection of cell biology and drug safety: does a small molecule's tendency to partition into biomolecular condensates — the membraneless, phase-separated compartments increasingly recognized as central hubs of cellular organization — carry information about its potential to cause organ toxicity? Using mass spectrometry-based partitioning measurements across eight reconstituted condensate systems and a validated machine learning pipeline, we've shown that this partitioning behavior is predictable from chemical structure, and that specific chemical signatures — aromaticity linked to hepatotoxicity, flexible basic-nitrogen-containing scaffolds linked to cardiotoxicity — recur consistently across thousands of approved, withdrawn, and investigational compounds drawn from independent pharmaceutical libraries.</p>
           <p>The emerging picture is more nuanced than a simple "condensates cause toxicity" story: our evidence to date is most consistent with condensate partitioning and certain toxicities sharing common upstream chemical drivers (lipophilicity, molecular planarity) rather than one directly causing the other, and we're currently designing confound-controlled experiments — including direct condensate-disruption assays in relevant cell systems — to test this distinction rigorously. We see this as a genuine opportunity to add a mechanistically grounded, complementary layer to existing computational toxicology tools, and we're actively pursuing wet-lab validation to determine exactly where this approach adds real predictive value.</p>
         </div>
       </details>
@@ -767,9 +753,9 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
       <div>
         <h3 style="font-size:1.05rem; margin-bottom:14px;">Positions</h3>
         <ul class="timeline">
-          <li><div class="what"><strong>Instructor</strong><span>HHMI / Dept. of Biophysics, UT Southwestern Medical Center</span></div><div class="yr">2025-present</div></li>
-          <li><div class="what"><strong>Assistant Instructor</strong><span>HHMI / Dept. of Biophysics, UT Southwestern Medical Center</span></div><div class="yr">2023-2025</div></li>
-          <li><div class="what"><strong>Postdoctoral Research Fellow</strong><span>HHMI / Dept. of Biophysics, UT Southwestern Medical Center</span></div><div class="yr">2017-2023</div></li>
+          <li><div class="what"><strong>Instructor</strong><span>HHMI / Dept. of Biophysics, UT Southwestern Medical Center</span></div><div class="yr">2025–present</div></li>
+          <li><div class="what"><strong>Assistant Instructor</strong><span>HHMI / Dept. of Biophysics, UT Southwestern Medical Center</span></div><div class="yr">2023–2025</div></li>
+          <li><div class="what"><strong>Postdoctoral Research Fellow</strong><span>HHMI / Dept. of Biophysics, UT Southwestern Medical Center</span></div><div class="yr">2017–2023</div></li>
         </ul>
         <h3 style="font-size:1.05rem; margin:30px 0 14px;">Education</h3>
         <ul class="timeline">
@@ -889,8 +875,8 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
     });
     window.scrollTo(0,0);
     document.title = (id === 'home')
-      ? "Sabareesan Ambadi Thody, PhD \u2014 Biophysics & Biomolecular Condensates"
-      : (id.charAt(0).toUpperCase()+id.slice(1)) + " \u2014 Sabareesan Ambadi Thody, PhD";
+      ? "Sabareesan Ambadi Thody, PhD — Biophysics & Biomolecular Condensates"
+      : (id.charAt(0).toUpperCase()+id.slice(1)) + " — Sabareesan Ambadi Thody, PhD";
   }
 
   function routeFromHash(){
