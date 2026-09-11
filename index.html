@@ -146,7 +146,11 @@ section.alt{background:var(--bg-panel);}
 .schematic svg{width:100%; height:auto; display:block;}
 .schematic-cap{margin-top:16px; font-size:0.92rem; color:var(--ink-soft); line-height:1.6; max-width:76ch;}
 .schematic-cap strong{color:var(--ink);}
-.schematic-legend{display:flex; flex-wrap:wrap; gap:20px; margin-top:14px; font-size:0.86rem; color:var(--ink-soft);}
+.schematic-legend{
+  display:flex; flex-wrap:wrap; justify-content:center; gap:18px 28px;
+  margin-top:20px; padding-top:16px; border-top:1px solid var(--hair);
+  font-size:0.86rem; color:var(--ink-soft);
+}
 .schematic-legend span{display:inline-flex; align-items:center; gap:7px;}
 .schematic-legend i{width:11px; height:11px; border-radius:50%; display:inline-block; flex-shrink:0;}
 
@@ -499,8 +503,8 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
         <div class="zoom-pane">
           <span class="panel-label">B</span> <span class="panel-sublabel">What dictates partitioning inside the stress granule</span>
           <svg viewBox="0 0 460 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="zoomTitle zoomDesc" style="margin-top:10px;">
-            <title id="zoomTitle">Composition-dependent small-molecule partitioning within the stress granule</title>
-            <desc id="zoomDesc">A single stress granule condensate containing two macromolecular zones: a protein-scaffold-rich region and an RNA-rich region. Small molecules are shown enriched more densely near the protein-rich region and more sparsely near the RNA-rich region, illustrating that both macromolecular composition and the local chemical environment shape where small molecules concentrate.</desc>
+            <title id="zoomTitle">Small-molecule partitioning within the stress granule</title>
+            <desc id="zoomDesc">A single stress granule condensate with protein scaffold (G3BP1) and RNA distributed together throughout its interior, rather than separated into distinct zones. Small molecules are shown enriched inside the condensate boundary and largely excluded outside it.</desc>
             <defs>
               <radialGradient id="condensateFillZoom" cx="42%" cy="38%" r="70%">
                 <stop offset="0%" stop-color="#4FEEDD" stop-opacity="0.45"/>
@@ -512,10 +516,10 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
             <circle cx="230" cy="225" r="150" fill="url(#condensateFillZoom)" stroke="#0EA99D" stroke-width="1.6" stroke-dasharray="2.5 5"/>
 
             <g fill="none" stroke="#0EA99D" stroke-width="1.6" stroke-linecap="round" opacity="0.75">
-              <path d="M177.2,287.9 C183.7,286.7 180.5,255.7 187.1,254.2"/> <path d="M214.4,102.5 C193.3,103.2 201.5,109.3 180.1,110.1"/> <path d="M211.7,124.4 C194.8,124.4 205.3,129.0 188.2,129.1"/> <path d="M126.9,167.7 C142.2,165.6 139.2,153.7 154.8,151.5"/> <path d="M198.8,131.1 C189.1,130.4 192.4,117.1 182.5,116.3"/> <path d="M208.1,149.5 C212.7,149.9 211.0,183.5 215.7,184.3"/> <path d="M166.9,271.2 C172.7,272.5 170.8,303.3 176.7,304.9"/> <path d="M219.9,327.4 C215.0,328.9 217.0,350.2 212.1,352.0"/> <path d="M137.4,251.8 C155.6,251.6 149.7,252.6 168.2,252.5"/> <path d="M187.4,109.8 C204.4,110.1 190.2,106.4 207.5,106.6"/> <path d="M124.4,291.5 C142.2,289.8 137.9,278.4 156.1,276.5"/> <path d="M144.0,231.4 C147.1,234.6 144.3,207.0 147.5,210.0"/> <path d="M198.9,318.5 C216.5,319.5 215.1,325.5 233.1,326.5"/> <path d="M142.3,253.8 C159.8,255.1 146.7,240.2 164.4,241.3"/> <path d="M167.6,176.2 C161.7,177.3 164.3,195.8 158.3,197.1"/> <path d="M118.5,274.2 C132.2,274.0 127.1,273.9 141.0,273.7"/>
+              <path d="M248.3,206.8 C232.9,208.2 243.7,194.7 228.1,196.0"/> <path d="M312.8,264.3 C321.5,265.3 318.6,286.1 327.4,287.4"/> <path d="M166.0,340.9 C183.1,340.7 169.3,340.7 186.6,340.5"/> <path d="M256.4,194.7 C252.4,196.1 254.3,221.7 250.2,223.5"/> <path d="M277.6,266.4 C291.5,265.7 284.1,289.8 298.2,289.2"/> <path d="M342.9,174.5 C330.5,177.1 333.8,196.1 321.2,198.8"/> <path d="M242.5,208.6 C260.3,208.0 250.4,220.3 268.4,219.8"/> <path d="M142.0,154.4 C128.9,153.7 137.9,165.7 124.5,165.1"/> <path d="M311.4,265.4 C294.5,264.8 297.3,259.4 280.1,258.7"/> <path d="M247.2,192.8 C233.7,194.7 243.5,178.2 229.9,180.0"/> <path d="M212.9,203.0 C213.1,201.8 213.4,227.8 213.6,226.8"/> <path d="M312.2,296.0 C295.9,296.3 304.0,298.9 287.5,299.1"/> <path d="M186.9,178.8 C202.2,178.4 194.4,191.6 209.9,191.4"/> <path d="M202.0,319.6 C194.6,320.5 198.6,298.2 191.2,298.9"/> <path d="M335.1,230.1 C323.0,231.3 330.7,216.7 318.4,217.7"/>
             </g>
             <g fill="none" stroke="#6B4FA0" stroke-width="1.6" stroke-linecap="round" opacity="0.7">
-              <path d="M358.4,233.7 C343.7,233.0 353.4,247.6 338.6,247.0"/> <path d="M338.5,213.5 C322.1,211.6 336.6,225.1 320.0,223.3"/> <path d="M240.1,223.3 C249.6,225.8 242.0,202.3 251.7,204.6"/> <path d="M353.8,258.9 C357.7,260.2 354.9,236.7 358.9,237.8"/> <path d="M254.5,314.6 C248.3,311.8 253.2,343.3 246.9,340.8"/> <path d="M292.2,221.9 C290.3,220.6 290.7,196.1 288.7,194.5"/> <path d="M286.1,133.1 C269.0,133.4 277.8,157.6 260.4,158.1"/> <path d="M313.7,224.8 C305.8,224.5 310.5,243.2 302.4,243.0"/> <path d="M280.8,299.4 C284.2,299.0 282.2,269.3 285.7,268.6"/> <path d="M330.2,189.5 C325.6,190.4 327.9,165.4 323.3,166.0"/> <path d="M331.4,274.6 C325.3,276.3 328.1,306.4 321.9,308.4"/> <path d="M303.8,160.2 C294.7,162.0 300.1,134.5 290.9,136.0"/> <path d="M316.3,302.4 C304.2,302.2 311.0,327.1 298.8,327.1"/> <path d="M300.2,232.6 C311.3,231.9 305.8,261.9 317.0,261.5"/> <path d="M295.2,274.8 C292.1,271.4 292.3,247.3 289.2,243.7"/> <path d="M332.8,246.0 C323.6,247.0 328.5,222.3 319.2,223.0"/>
+              <path d="M217.8,240.3 C233.3,240.0 225.7,228.6 241.4,228.1"/> <path d="M252.4,144.3 C233.0,144.6 243.3,141.8 223.6,142.1"/> <path d="M126.1,174.7 C142.6,174.9 135.7,191.2 152.5,191.6"/> <path d="M349.0,264.4 C339.1,263.7 342.4,250.5 332.4,249.7"/> <path d="M237.3,112.2 C242.2,113.6 240.8,132.4 245.8,134.0"/> <path d="M220.8,209.8 C231.0,209.8 225.4,187.2 235.7,187.0"/> <path d="M229.9,266.6 C211.7,266.1 225.4,273.4 206.9,272.9"/> <path d="M283.2,177.7 C284.8,179.3 284.6,199.8 286.3,201.6"/> <path d="M298.2,199.5 C309.4,201.3 301.3,177.0 312.7,178.6"/> <path d="M120.7,258.1 C123.4,256.7 122.2,236.4 124.9,234.7"/> <path d="M187.1,343.8 C188.1,343.9 187.3,322.3 188.2,322.2"/> <path d="M306.0,142.5 C291.6,142.0 296.3,133.5 281.6,132.9"/> <path d="M289.4,130.5 C280.1,131.4 285.4,112.8 276.0,113.5"/> <path d="M156.5,166.1 C174.1,165.3 169.3,161.2 187.2,160.4"/> <path d="M328.5,150.9 C312.8,152.0 319.3,169.4 303.4,170.6"/>
             </g>
 
             <g fill="#7C8798">
@@ -523,13 +527,10 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
             </g>
 
             <g fill="#E8563A">
-              <circle cx="203.4" cy="261.1" r="5.4"/> <circle cx="158.0" cy="264.6" r="4.1"/> <circle cx="191.3" cy="259.5" r="3.6"/> <circle cx="162.1" cy="152.7" r="3.6"/> <circle cx="116.2" cy="176.8" r="4.0"/> <circle cx="161.3" cy="193.4" r="5.2"/> <circle cx="178.3" cy="155.8" r="5.9"/> <circle cx="98.1" cy="200.0" r="4.3"/> <circle cx="153.8" cy="123.4" r="5.7"/> <circle cx="181.4" cy="118.0" r="5.0"/> <circle cx="144.2" cy="246.4" r="6.1"/> <circle cx="209.3" cy="203.6" r="5.7"/> <circle cx="185.4" cy="190.5" r="3.9"/> <circle cx="179.0" cy="241.9" r="6.1"/> <circle cx="229.6" cy="253.7" r="4.4"/> <circle cx="219.5" cy="93.3" r="3.8"/> <circle cx="175.0" cy="255.4" r="3.9"/>
-            </g>
-            <g fill="#E8563A" opacity="0.75">
-              <circle cx="311.6" cy="328.3" r="3.3"/> <circle cx="284.7" cy="152.8" r="3.2"/> <circle cx="358.3" cy="193.3" r="4.1"/> <circle cx="350.3" cy="250.3" r="3.2"/> <circle cx="359.4" cy="224.0" r="3.4"/> <circle cx="269.4" cy="352.8" r="3.5"/>
+              <circle cx="197.5" cy="337.7" r="5.6"/> <circle cx="154.5" cy="323.1" r="5.1"/> <circle cx="165.5" cy="173.8" r="4.5"/> <circle cx="253.4" cy="125.8" r="5.2"/> <circle cx="317.7" cy="228.3" r="5.5"/> <circle cx="263.0" cy="310.8" r="3.9"/> <circle cx="192.7" cy="216.9" r="3.7"/> <circle cx="354.9" cy="260.9" r="3.7"/> <circle cx="251.9" cy="202.4" r="3.9"/> <circle cx="140.5" cy="214.6" r="3.6"/> <circle cx="246.7" cy="228.9" r="3.7"/> <circle cx="143.4" cy="308.7" r="4.0"/> <circle cx="210.0" cy="240.7" r="4.5"/> <circle cx="228.5" cy="226.2" r="4.7"/> <circle cx="172.7" cy="105.6" r="4.5"/> <circle cx="313.0" cy="259.0" r="4.6"/> <circle cx="224.2" cy="151.0" r="5.0"/> <circle cx="190.5" cy="109.9" r="3.7"/> <circle cx="122.5" cy="273.7" r="5.7"/> <circle cx="297.5" cy="150.9" r="3.8"/> <circle cx="348.9" cy="191.7" r="3.8"/> <circle cx="248.9" cy="256.3" r="4.8"/>
             </g>
 
-            <text x="230" y="445" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12" fill="#56637E">Enrichment tracks local macromolecular composition</text>
+            <text x="230" y="445" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="12" fill="#56637E">G3BP1, RNA, and small molecules coexist throughout the condensate</text>
           </svg>
         </div>
       </div>
@@ -542,7 +543,7 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
         <span><i style="background:#E8563A;"></i>Enriched small molecule</span>
         <span><i style="background:#7C8798;"></i>Excluded small molecule</span>
       </div>
-      <figcaption class="schematic-cap"><strong>Figure 1.</strong> The cell organizes itself using dozens of distinct biomolecular condensates, both in the cytoplasm and the nucleus <em>(A)</em>. My research focuses on the stress granule, circled above. Zooming in <em>(B)</em>: small-molecule composition within a condensate is not fixed — it is dictated by a combination of the local macromolecular composition and the chemical environment those macromolecules create. Regions richer in protein scaffold concentrate small molecules more strongly than RNA-rich regions of the same condensate, even though both are part of the same compartment.</figcaption>
+      <figcaption class="schematic-cap"><strong>Figure 1.</strong> The cell organizes itself using dozens of distinct biomolecular condensates, both in the cytoplasm and the nucleus <em>(A)</em>. My research focuses on the stress granule, circled above. Zooming in <em>(B)</em>: protein scaffold (G3BP1) and RNA are distributed together throughout the condensate, not segregated into separate regions. Within this shared macromolecular environment, small molecules still partition selectively &mdash; concentrating inside the condensate's chemically distinct interior while remaining largely excluded outside it, a selectivity shaped by the combined composition and chemical environment those macromolecules create.</figcaption>
     </figure>
 
     <p>My current work asks how small molecules — metabolites, drugs, fluorescent probes — partition into biomolecular condensates. While it was increasingly clear how proteins and nucleic acids assemble into these compartments, almost nothing was known about how small molecules find their way in. I built a high-throughput screening platform combining LC-MS, targeted and untargeted metabolomics, and fluorescence microscopy, and used it to measure partitioning coefficients for roughly 3,000 small molecules across condensates formed by diverse protein and nucleic acid scaffolds. The differences between compounds spanned nearly a million-fold, yet a machine learning model built on just a handful of computed physicochemical features — chiefly solubility and hydrophobicity — predicted partitioning with striking accuracy. Condensates, it turns out, behave as chemically distinct, largely hydrophobic microenvironments rather than sites of specific molecular recognition.</p>
