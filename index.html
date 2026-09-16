@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sabareesan Ambadi Thody, PhD — Biophysics &amp; Biomolecular Condensates</title>
+<title>Sabareesan Ambadi Thody, PhD, Biophysics &amp; Biomolecular Condensates</title>
 <meta name="description" content="Sabareesan Ambadi Thody, PhD. Instructor, HHMI/Department of Biophysics, UT Southwestern Medical Center. Research on small-molecule partitioning into biomolecular condensates.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -178,6 +178,17 @@ section.alt{background:var(--bg-panel);}
   border:1px solid var(--hair); border-radius:20px; padding:6px 13px;
 }
 
+.expertise-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; margin-top:8px;}
+.expertise-card{background:var(--paper); border:1px solid var(--hair); border-radius:8px; overflow:hidden;}
+.expertise-card-bar{height:5px;}
+.expertise-card-body{padding:22px 22px 26px;}
+.expertise-icon{
+  width:42px; height:42px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  margin-bottom:16px;
+}
+.expertise-card h3{font-size:1.05rem; line-height:1.3; margin-bottom:16px; color:var(--ink);}
+.expertise-card .chip{background:var(--bg-panel); border-color:var(--hair);}
+
 /* ---------- Project cards ---------- */
 .project-card{background:var(--paper); border:1px solid var(--hair); border-radius:4px; padding:28px;}
 .project-card + .project-card{margin-top:20px;}
@@ -265,11 +276,16 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
 }
 .skip-link:focus{top:12px;}
 
+@media (max-width: 1000px){
+  .expertise-grid{grid-template-columns:1fr 1fr;}
+}
+
 @media (max-width: 760px){
   .hero{grid-template-columns:1fr; gap:36px; padding-top:44px;}
   .hero h1{white-space:normal; font-size:clamp(1.5rem, 6vw, 2rem);}
   .hero-art{max-width:280px; margin:0 auto;}
   .skill-groups{grid-template-columns:1fr;}
+  .expertise-grid{grid-template-columns:1fr;}
   .two-col{grid-template-columns:1fr;}
   .contact-grid{grid-template-columns:1fr;}
   .pub-item{grid-template-columns:44px 1fr;}
@@ -321,7 +337,7 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
       <h1>Sabareesan Ambadi Thody, PhD</h1>
     </div>
     <p class="role">Instructor, HHMI and the Department of Biophysics, UT Southwestern Medical Center, Dallas, Texas</p>
-    <p class="pitch">I study how small molecules — metabolites, drugs, and probes — find their way into biomolecular condensates, the membraneless compartments that organize the inside of living cells, and what that selective partitioning means for cell biology and disease.</p>
+    <p class="pitch">I study how small molecules (metabolites, drugs, and probes) find their way into biomolecular condensates, the membraneless compartments that organize the inside of living cells, and what that selective partitioning means for cell biology and disease.</p>
     <div class="cta-row">
       <a class="btn btn-secondary" href="https://www.linkedin.com/in/sabareesan-ambadi-thody-phd-39188132" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
       <a class="btn btn-secondary" href="https://scholar.google.com/citations?user=N8LOpPIAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar<span class="sr-only"> (opens in a new tab)</span></a>
@@ -363,7 +379,7 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
   <div class="wrap-wide">
     <div class="section-head">
       <h2>Areas of expertise</h2>
-      <p class="dek">Twelve years across the full arc of a research program &mdash; from bench biophysics through computational methods to applied, translational strategy.</p>
+      <p class="dek">Twelve years across the full arc of a research program, from bench biophysics through computational methods to applied, translational strategy.</p>
     </div>
 
     <svg viewBox="0 0 1080 335" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="matrixTitle matrixDesc" style="width:100%; height:auto; display:block;">
@@ -482,7 +498,7 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
 
 <section>
   <div class="wrap prose">
-    <p>My work sits at the interface of biochemistry, biophysics, and quantitative chemical biology. I build integrative frameworks, combining structural biology, biophysical characterization, metabolomics, mass-spectrometry-based proteomics, and cellular assays, to ask quantitative questions about how molecules organize inside cells.</p>
+    <p>My work sits at the interface of biochemistry, biophysics, and quantitative chemical biology. I build integrative frameworks (combining structural biology, biophysical characterization, metabolomics, mass-spectrometry-based proteomics, and cellular assays) to ask quantitative questions about how molecules organize inside cells.</p>
 
     <figure class="schematic schematic-photo">
       <div class="figure-two-col">
@@ -543,10 +559,10 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
         <span><i style="background:#E8563A;"></i>Enriched small molecule</span>
         <span><i style="background:#7C8798;"></i>Excluded small molecule</span>
       </div>
-      <figcaption class="schematic-cap"><strong>Figure 1.</strong> The cell organizes itself using dozens of distinct biomolecular condensates, both in the cytoplasm and the nucleus <em>(A)</em>. My research focuses on the stress granule, circled above. Zooming in <em>(B)</em>: protein scaffold (G3BP1) and RNA are distributed together throughout the condensate, not segregated into separate regions. Within this shared macromolecular environment, small molecules still partition selectively &mdash; concentrating inside the condensate's chemically distinct interior while remaining largely excluded outside it, a selectivity shaped by the combined composition and chemical environment those macromolecules create.</figcaption>
+      <figcaption class="schematic-cap"><strong>Figure 1.</strong> The cell organizes itself using dozens of distinct biomolecular condensates, both in the cytoplasm and the nucleus <em>(A)</em>. My research focuses on the stress granule, circled above. Zooming in <em>(B)</em>: protein scaffold (G3BP1) and RNA are distributed together throughout the condensate, not segregated into separate regions. Within this shared macromolecular environment, small molecules still partition selectively, concentrating inside the condensate's chemically distinct interior while remaining largely excluded outside it, a selectivity shaped by the combined composition and chemical environment those macromolecules create.</figcaption>
     </figure>
 
-    <p>My current work asks how small molecules, metabolites, drugs, fluorescent probes, partition into biomolecular condensates. While it was increasingly clear how proteins and nucleic acids assemble into these compartments, almost nothing was known about how small molecules find their way in. I built a high-throughput screening platform combining LC-MS, targeted and untargeted metabolomics, and fluorescence microscopy, and used it to measure partitioning coefficients for roughly 3,000 small molecules across condensates formed by diverse protein and nucleic acid scaffolds. The differences between compounds spanned nearly a million-fold, yet a machine learning model built on just a handful of computed physicochemical features, predominantly solubility and hydrophobicity, predicted partitioning with striking accuracy. Condensates, it turns out, behave as chemically distinct, largely hydrophobic microenvironments rather than sites of specific molecular recognition.</p>
+    <p>My current work asks how small molecules (metabolites, drugs, fluorescent probes) partition into biomolecular condensates. While it was increasingly clear how proteins and nucleic acids assemble into these compartments, almost nothing was known about how small molecules find their way in. I built a high-throughput screening platform combining LC-MS, targeted and untargeted metabolomics, and fluorescence microscopy, and used it to measure partitioning coefficients for roughly 3,000 small molecules across condensates formed by diverse protein and nucleic acid scaffolds. The differences between compounds spanned nearly a million-fold, yet a machine learning model built on just a handful of computed physicochemical features (chiefly solubility and hydrophobicity) predicted partitioning with striking accuracy. Condensates, it turns out, behave as chemically distinct, largely hydrophobic microenvironments rather than sites of specific molecular recognition.</p>
 
     <p>In the most recent phase of this work, I reconstituted G3BP1-induced stress-granule-like condensates in cell lysate and profiled how hundreds of endogenous metabolites and over a thousand FDA-approved drugs partition into them. About one in ten compounds showed strong, selective enrichment, evidence that even in a complex, crowded cellular environment, condensates carve out a distinct physicochemical niche that shapes which small molecules concentrate where.</p>
   </div>
@@ -583,7 +599,7 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
       <details>
         <summary><span class="chevron"></span>Read full project</summary>
         <div class="project-full">
-          <p>Cells organize their interior using membraneless droplets, biomolecular condensates, that concentrate specific molecules. Stress granules, which assemble around the scaffold protein G3BP1, can switch signaling pathways on or off, yet the rules governing what they capture remain unclear. Using cell-free reconstitution together with quantitative proteomics and metabolomics, we measure how strongly thousands of proteins and hundreds of metabolites partition into G3BP1 condensates. We find that partitioning is highly selective: the granule concentrates upstream signaling kinases and scaffolds while excluding their regulators and downstream effectors, and it maintains a distinct metabolite microenvironment enriched for nucleotides and messengers such as cyclic AMP. Notably, the cancer-associated kinase c-Raf enters stripped of its normal regulatory partners.</p>
+          <p>Cells organize their interior using membraneless droplets (biomolecular condensates) that concentrate specific molecules. Stress granules, which assemble around the scaffold protein G3BP1, can switch signaling pathways on or off, yet the rules governing what they capture remain unclear. Using cell-free reconstitution together with quantitative proteomics and metabolomics, we measure how strongly thousands of proteins and hundreds of metabolites partition into G3BP1 condensates. We find that partitioning is highly selective: the granule concentrates upstream signaling kinases and scaffolds while excluding their regulators and downstream effectors, and it maintains a distinct metabolite microenvironment enriched for nucleotides and messengers such as cyclic AMP. Notably, the cancer-associated kinase c-Raf enters stripped of its normal regulatory partners.</p>
           <p>These findings support a working model of the stress granule as a selective molecular filter that co-organizes proteins and metabolites to remodel signaling. We are now extending this work into living cells to explore how condensate-based sequestration influences stress adaptation and drug responses in cancer.</p>
         </div>
       </details>
@@ -607,8 +623,8 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
       <details>
         <summary><span class="chevron"></span>Read full project</summary>
         <div class="project-full">
-          <p>Our lab is exploring a question at the intersection of cell biology and drug safety: does a small molecule's tendency to partition into biomolecular condensates, the membraneless, phase-separated compartments increasingly recognized as central hubs of cellular organization, carry information about its potential to cause organ toxicity? Using mass spectrometry-based partitioning measurements across eight reconstituted condensate systems and a validated machine learning pipeline, we've shown that this partitioning behavior is predictable from chemical structure, and that specific chemical signatures, aromaticity linked to hepatotoxicity, flexible basic-nitrogen-containing scaffolds linked to cardiotoxicity, recur consistently across thousands of approved, withdrawn, and investigational compounds drawn from independent pharmaceutical libraries.</p>
-          <p>The emerging picture is more nuanced than a simple "condensates cause toxicity" story: our evidence to date is most consistent with condensate partitioning and certain toxicities sharing common upstream chemical drivers (lipophilicity, molecular planarity) rather than one directly causing the other, and we're currently designing confound-controlled experiments, including direct condensate-disruption assays in relevant cell systems, to test this distinction rigorously. We see this as a genuine opportunity to add a mechanistically grounded, complementary layer to existing computational toxicology tools, and we're actively pursuing wet-lab validation to determine exactly where this approach adds real predictive value.</p>
+          <p>Our lab is exploring a question at the intersection of cell biology and drug safety: does a small molecule's tendency to partition into biomolecular condensates (the membraneless, phase-separated compartments increasingly recognized as central hubs of cellular organization) carry information about its potential to cause organ toxicity? Using mass spectrometry-based partitioning measurements across eight reconstituted condensate systems and a validated machine learning pipeline, we've shown that this partitioning behavior is predictable from chemical structure, and that specific chemical signatures (aromaticity linked to hepatotoxicity, flexible basic-nitrogen-containing scaffolds linked to cardiotoxicity) recur consistently across thousands of approved, withdrawn, and investigational compounds drawn from independent pharmaceutical libraries.</p>
+          <p>The emerging picture is more nuanced than a simple "condensates cause toxicity" story: our evidence to date is most consistent with condensate partitioning and certain toxicities sharing common upstream chemical drivers (lipophilicity, molecular planarity) rather than one directly causing the other, and we're currently designing confound-controlled experiments (including direct condensate-disruption assays in relevant cell systems) to test this distinction rigorously. We see this as a genuine opportunity to add a mechanistically grounded, complementary layer to existing computational toxicology tools, and we're actively pursuing wet-lab validation to determine exactly where this approach adds real predictive value.</p>
         </div>
       </details>
     </article>
@@ -625,42 +641,117 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
     <div class="page-id-row"><img class="page-id-photo" src="data:image/jpeg;base64,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" alt="Portrait of Sabareesan Ambadi Thody"><span class="page-id-name">Sabareesan Ambadi Thody</span></div>
     <p class="breadcrumb"><a href="#home" data-page="home">Home</a> / Expertise</p>
     <h1>Expertise</h1>
-    <p>Twelve years of hands-on bench and analytical experience spanning structural biophysics, metabolomics, and small-molecule drug discovery.</p>
+    <p>Twelve years of hands-on bench, analytical, and computational experience, the full technical toolkit behind the research.</p>
   </div>
 </div>
 
 <section>
-  <div class="wrap">
-    <div class="skill-groups">
-      <div class="skill-group">
-        <h3>Structural &amp; biophysical</h3>
-        <ul class="chip-list">
-          <li class="chip">HDX-MS</li>
-          <li class="chip">Circular dichroism</li>
-          <li class="chip">Fluorescence &amp; UV-Vis spectroscopy</li>
-          <li class="chip">Dynamic light scattering</li>
-          <li class="chip">Isothermal titration calorimetry</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <h3>Molecular &amp; cellular</h3>
-        <ul class="chip-list">
-          <li class="chip">Molecular cloning</li>
-          <li class="chip">Recombinant protein expression</li>
-          <li class="chip">Protein purification (AKTA/FPLC)</li>
-          <li class="chip">Confocal fluorescence microscopy</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <h3>Analytical &amp; computational</h3>
-        <ul class="chip-list">
-          <li class="chip">Targeted &amp; untargeted metabolomics</li>
-          <li class="chip">Small-molecule mass spectrometry</li>
-          <li class="chip">LC-MS</li>
-          <li class="chip">Label-free proteomics</li>
-          <li class="chip">Machine learning for property prediction</li>
-        </ul>
-      </div>
+  <div class="wrap-wide">
+    <div class="expertise-grid">
+
+      <article class="expertise-card">
+        <div class="expertise-card-bar" style="background:#0EA99D;"></div>
+        <div class="expertise-card-body">
+          <div class="expertise-icon" style="background:#EAF8F6; border:1.3px solid #0EA99D;">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v14M3 10h14" stroke="#0A7A70" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Structural &amp; biophysical characterization</h3>
+          <ul class="chip-list">
+            <li class="chip">Hydrogen-deuterium exchange MS (HDX-MS)</li>
+            <li class="chip">Circular dichroism spectroscopy</li>
+            <li class="chip">Fluorescence &amp; UV-Vis spectroscopy</li>
+            <li class="chip">Dynamic light scattering (DLS)</li>
+            <li class="chip">Isothermal titration calorimetry (ITC)</li>
+            <li class="chip">Surface plasmon resonance (SPR)</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="expertise-card">
+        <div class="expertise-card-bar" style="background:#3F8F5C;"></div>
+        <div class="expertise-card-body">
+          <div class="expertise-icon" style="background:#EAF7EF; border:1.3px solid #3F8F5C;">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 4c4 3 10 3 14 0M3 10c4 3 10 3 14 0M3 16c4 3 10 3 14 0" stroke="#2E6E45" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Molecular &amp; cellular biology</h3>
+          <ul class="chip-list">
+            <li class="chip">Molecular cloning</li>
+            <li class="chip">Recombinant protein expression</li>
+            <li class="chip">Protein purification (&Auml;KTA/FPLC)</li>
+            <li class="chip">Confocal fluorescence microscopy</li>
+            <li class="chip">Fluorescence recovery after photobleaching (FRAP)</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="expertise-card">
+        <div class="expertise-card-bar" style="background:#CC3B1B;"></div>
+        <div class="expertise-card-body">
+          <div class="expertise-icon" style="background:#FFF5F2; border:1.3px solid #CC3B1B;">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="6" cy="7" r="2" fill="#CC3B1B"/><circle cx="14" cy="6" r="1.6" fill="#CC3B1B"/><circle cx="13" cy="13" r="2.2" fill="#CC3B1B"/></svg>
+          </div>
+          <h3>Metabolomics &amp; mass spectrometry</h3>
+          <ul class="chip-list">
+            <li class="chip">Targeted &amp; untargeted metabolomics</li>
+            <li class="chip">Small-molecule mass spectrometry</li>
+            <li class="chip">LC-MS</li>
+            <li class="chip">Label-free proteomics</li>
+            <li class="chip">Bottom-up &amp; top-down MS approaches</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="expertise-card">
+        <div class="expertise-card-bar" style="background:#2E6FA8;"></div>
+        <div class="expertise-card-body">
+          <div class="expertise-icon" style="background:#EAF2F8; border:1.3px solid #2E6FA8;">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="7" fill="none" stroke="#2E6FA8" stroke-width="1.4" stroke-dasharray="1.8 2.6"/><circle cx="8" cy="9" r="1.3" fill="#2E6FA8"/><circle cx="12" cy="12" r="1" fill="#2E6FA8"/></svg>
+          </div>
+          <h3>Condensate &amp; aggregation biophysics</h3>
+          <ul class="chip-list">
+            <li class="chip">Cell-lysate condensate reconstitution</li>
+            <li class="chip">Thioflavin T (ThT) aggregation kinetics</li>
+            <li class="chip">Viscoelastic &amp; rheological measurements</li>
+            <li class="chip">Protein&ndash;protein &amp; protein&ndash;small-molecule interaction mapping</li>
+            <li class="chip">Amyloid fibril formation kinetics</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="expertise-card">
+        <div class="expertise-card-bar" style="background:#6B4FA0;"></div>
+        <div class="expertise-card-body">
+          <div class="expertise-icon" style="background:#F3EFFA; border:1.3px solid #6B4FA0;">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="5" cy="6" r="1.7" fill="#6B4FA0"/><circle cx="15" cy="6" r="1.7" fill="#6B4FA0"/><circle cx="10" cy="15" r="1.7" fill="#6B4FA0"/><path d="M5 6 15 6M5 6 10 15M15 6 10 15" stroke="#6B4FA0" stroke-width="1"/></svg>
+          </div>
+          <h3>Computational &amp; machine learning</h3>
+          <ul class="chip-list">
+            <li class="chip">Property-prediction modeling</li>
+            <li class="chip">Cheminformatics descriptors</li>
+            <li class="chip">IDR &amp; phase-separation prediction (localCIDER, Metapredict, PSPredictor)</li>
+            <li class="chip">Chemical-space analysis (PCA/UMAP)</li>
+            <li class="chip">Large-scale data-pipeline design</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="expertise-card">
+        <div class="expertise-card-bar" style="background:#8A6A0C;"></div>
+        <div class="expertise-card-body">
+          <div class="expertise-icon" style="background:#FFF8EA; border:1.3px solid #8A6A0C;">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 3h9l3 3v11H4z" fill="none" stroke="#8A6A0C" stroke-width="1.4" stroke-linejoin="round"/><path d="M7 9h6M7 12h6M7 15h4" stroke="#8A6A0C" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Scientific leadership &amp; communication</h3>
+          <ul class="chip-list">
+            <li class="chip">Grant &amp; manuscript writing</li>
+            <li class="chip">Peer review (Star Protocols, Frontiers, BMC Cancer, Cancer Cell International)</li>
+            <li class="chip">Editorial service (CPQ Medicine)</li>
+            <li class="chip">Mentoring &amp; training (10+ students)</li>
+            <li class="chip">Oral &amp; poster presentations (20+)</li>
+          </ul>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
@@ -685,7 +776,7 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
         <div class="pub-year">2024</div>
         <div>
           <p class="pub-title">Small-molecule properties define partitioning into biomolecular condensates</p>
-          <p class="pub-meta"><strong>Ambadi Thody, S.</strong>, Clements, H.D., Baniasadi, H., Lyon, A.S., Sigman, M.S., Rosen, M.K. — <em>Nature Chemistry</em> 16, 1794-1802</p>
+          <p class="pub-meta"><strong>Ambadi Thody, S.</strong>, Clements, H.D., Baniasadi, H., Lyon, A.S., Sigman, M.S., Rosen, M.K., <em>Nature Chemistry</em> 16, 1794-1802</p>
           <p class="pub-note">Covered by a News &amp; Views in Nature Chemistry and a Research Highlight in Nature Chemical Biology.</p>
         </div>
       </li>
@@ -693,42 +784,42 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
         <div class="pub-year">2018</div>
         <div>
           <p class="pub-title">Mechanism of aggregation and membrane interactions of mammalian prion protein</p>
-          <p class="pub-meta"><strong>Ambadi Thody, S.</strong>, Mathew, M.K., Udgaonkar, J.B. — <em>Biochimica et Biophysica Acta (BBA) - Biomembranes</em> 1860(9), 1927-1935</p>
+          <p class="pub-meta"><strong>Ambadi Thody, S.</strong>, Mathew, M.K., Udgaonkar, J.B., <em>Biochimica et Biophysica Acta (BBA), Biomembranes</em> 1860(9), 1927-1935</p>
         </div>
       </li>
       <li class="pub-item">
         <div class="pub-year">2017</div>
         <div>
           <p class="pub-title">The G126V mutation in the mouse prion protein hinders nucleation-dependent fibril formation by slowing initial fibril growth and by increasing the critical concentration</p>
-          <p class="pub-meta"><strong>Ambadi Thody, S.</strong>, Udgaonkar, J.B. — <em>Biochemistry</em> 56(44), 5931-5942</p>
+          <p class="pub-meta"><strong>Ambadi Thody, S.</strong>, Udgaonkar, J.B., <em>Biochemistry</em> 56(44), 5931-5942</p>
         </div>
       </li>
       <li class="pub-item">
         <div class="pub-year">2016</div>
         <div>
           <p class="pub-title">Pathogenic mutations within the palindromic region of the prion protein induce structure therein and accelerate the formation of misfolded oligomers</p>
-          <p class="pub-meta"><strong>Ambadi Thody, S.</strong>, Udgaonkar, J.B. — <em>Journal of Molecular Biology</em> 428, 3935-3947</p>
+          <p class="pub-meta"><strong>Ambadi Thody, S.</strong>, Udgaonkar, J.B., <em>Journal of Molecular Biology</em> 428, 3935-3947</p>
         </div>
       </li>
       <li class="pub-item">
         <div class="pub-year">2014</div>
         <div>
           <p class="pub-title">Rational stabilization of helix 2 of the prion protein prevents its misfolding and oligomerization</p>
-          <p class="pub-meta">Singh, J., Kumar, H., <strong>Ambadi Thody, S.</strong>, Udgaonkar, J.B. — <em>Journal of the American Chemical Society</em> 136(48), 16704-16707</p>
+          <p class="pub-meta">Singh, J., Kumar, H., <strong>Ambadi Thody, S.</strong>, Udgaonkar, J.B., <em>Journal of the American Chemical Society</em> 136(48), 16704-16707</p>
         </div>
       </li>
       <li class="pub-item">
         <div class="pub-year">2014</div>
         <div>
           <p class="pub-title">Amyloid fibril formation by the chain B subunit of monellin occurs by a nucleation-dependent polymerization mechanism</p>
-          <p class="pub-meta"><strong>Ambadi Thody, S.</strong>, Udgaonkar, J.B. — <em>Biochemistry</em> 53(7), 1206-1217</p>
+          <p class="pub-meta"><strong>Ambadi Thody, S.</strong>, Udgaonkar, J.B., <em>Biochemistry</em> 53(7), 1206-1217</p>
         </div>
       </li>
       <li class="pub-item">
         <div class="pub-year">2012</div>
         <div>
           <p class="pub-title">Development of the structural core and of conformational heterogeneity during the conversion of oligomers of the mouse prion protein to worm-like amyloid fibrils</p>
-          <p class="pub-meta">Singh, J., <strong>Ambadi Thody, S.</strong>, Mathew, M.K., Udgaonkar, J.B. — <em>Journal of Molecular Biology</em> 423(2), 217-231</p>
+          <p class="pub-meta">Singh, J., <strong>Ambadi Thody, S.</strong>, Mathew, M.K., Udgaonkar, J.B., <em>Journal of Molecular Biology</em> 423(2), 217-231</p>
         </div>
       </li>
     </ul>
@@ -841,7 +932,7 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
     </div>
     <div class="contact-note">
       <h2 class="sr-only">Availability</h2>
-      <p style="color:var(--ink-soft); max-width:40ch;">I read every message personally &mdash; email is the most reliable way to reach me.</p>
+      <p style="color:var(--ink-soft); max-width:40ch;">I read every message personally, email is the most reliable way to reach me.</p>
     </div>
   </div>
   <div class="wrap foot-bottom">
@@ -876,8 +967,8 @@ address{font-style:normal; color:var(--ink-soft); font-size:0.94rem; margin-top:
     });
     window.scrollTo(0,0);
     document.title = (id === 'home')
-      ? "Sabareesan Ambadi Thody, PhD — Biophysics & Biomolecular Condensates"
-      : (id.charAt(0).toUpperCase()+id.slice(1)) + " — Sabareesan Ambadi Thody, PhD";
+      ? "Sabareesan Ambadi Thody, PhD, Biophysics & Biomolecular Condensates"
+      : (id.charAt(0).toUpperCase()+id.slice(1)) + ", Sabareesan Ambadi Thody, PhD";
   }
 
   function routeFromHash(){
